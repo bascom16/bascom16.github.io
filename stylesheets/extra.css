@@ -1,0 +1,97 @@
+.md-typeset__table th {
+  font-weight: normal;
+  overflow-x: auto;
+}
+/* Sets a specific width for columns in tables with the "compact-table" class */
+.compact-table th,
+.compact-table td {
+  width: 100px;
+}
+
+.key-highlight {
+  color: #0084d1;
+}
+
+/* --- Cell Outline Style --- */
+.highlight-cell {
+  outline: 2px dashed #2196F3;
+}
+
+/* --- Cell Border Style --- */
+.highlight-cell-border {
+  border: 2px solid #2196F3; /* A 2px solid, blue border */
+  box-sizing: border-box; /* Ensures padding is included inside the border */
+}
+
+/* --- Heart animation --- */
+
+@keyframes heart {
+  0%, 40%, 80%, 100% {
+    transform: scale(1);
+  }
+  20%, 60% {
+    transform: scale(1.15);
+  }
+}
+.heart {
+  animation: heart 1000ms infinite;
+}
+
+/* --- Keyboard Hover Effect --- */
+
+/* Make the interactive keys look clickable */
+.key-highlight-layout td:not(:empty) {
+  cursor: pointer;
+}
+
+/* By default, hide the key that should only appear on hover */
+.key-hover {
+  display: none;
+}
+
+/* When you hover over a table cell... */
+.key-highlight-layout td:hover .key-default {
+  /* ...hide the default key */
+  display: none;
+}
+
+.key-highlight-layout td:hover .key-hover {
+  /* ...and show the hover key instead! */
+  display: inline;
+}
+
+/* --- Table Flipper Effect --- */
+
+/* Add a pointer cursor to the whole container to show it's interactive */
+.table-flipper {
+  cursor: pointer;
+}
+
+/* Hide the back table by default */
+.table-back {
+  display: none;
+}
+
+/* When you hover over the main container... */
+.table-flipper:hover .table-front {
+  /* ...hide the front table */
+  display: none;
+}
+
+.table-flipper:hover .table-back {
+  /* ...and show the back table instead */
+  display: block;
+}
+
+/* Custom style for a smaller button */
+.md-button--small {
+  font-size: 0.7rem; /* Make the text smaller */
+  padding: 0.3em 0.8em; /* Reduce the padding */
+  height: auto; /* Allow the button height to shrink */
+  vertical-align: top;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}

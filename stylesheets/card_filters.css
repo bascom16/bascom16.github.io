@@ -1,0 +1,43 @@
+/* docs/assets/stylesheets/card_filters.css */
+
+/* Style for the Isotope filter buttons */
+.button-group > .button {
+  background-color: transparent;
+  color: var(--md-default-fg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.8rem;
+}
+
+.button-group > .button:hover {
+  background-color: var(--md-accent-fg-color);
+  color: var(--md-accent-bg-color);
+  border-color: var(--md-accent-fg-color);
+}
+
+.button-group > .button.is-checked {
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  border-color: var(--md-primary-fg-color);
+}
+
+/* Optional: Add a smooth transition for the cards */
+#project-grid .item {
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+/* docs/assets/stylesheets/card_filters.css */
+
+/* --- Add this to the end of your file --- */
+
+/* Control image size within project cards */
+.grid.cards li img {
+  display: block;
+  max-height: 300px; /* Adjust this value to your liking */
+  width: auto;
+  margin: 1rem auto 0; /* Add some space above the image */
+}
