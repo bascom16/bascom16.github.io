@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
-      - run: pip install mkdocs-material mkdocs-redirects
+      - run: pip install --upgrade mkdocs-material mkdocs-redirects
 
       # This is the key change:
       # It uses your secret token to deploy to the correct repository and branch.
