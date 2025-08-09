@@ -26,7 +26,9 @@ theme:
       accent: deep orange
 
 markdown_extensions:
+  - tables
   - attr_list
+  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -53,6 +55,10 @@ extra:
     - icon: simple/github
       link: https://github.com/bascom16
 
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/card_filters.css
+
 copyright: Copyright &copy; 2025 Brian Bascom
 
 nav:
@@ -66,3 +72,8 @@ plugins:
   - redirects:
       redirect_maps:
         'github.md': 'https://github.com/bascom16'
+  - tags
+
+extra_javascript:
+  - https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js
+  - javascript/isotope-init.js
