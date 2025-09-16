@@ -1,6 +1,6 @@
 # IEEE Club Keyboard Project [:simple-git:](https://github.com/bascom16/zmk_clacken){ .md-button .md-button--small }
 
-**FINISHED PRODUCT PICTURE**
+![Keyboard](assets/keyboard_full.png)
 
 The 2024-2025 IEEE BYU chapter project consisted of creating custom keyboards. 
 Hardware and software were based on a personal project previously completed by [Carter Pollan](https://github.com/Virginia2244) (IEEE BYU chapter then-vice president).
@@ -11,15 +11,15 @@ I began this project at the beginning of my sophomore year of college, and I qui
 
 This project was my first introduction to PCBs and surface mount soldering. 
 
-**PCB PICTURE**
+<!-- **PCB PICTURE** -->
 
 The PCB was completed as a group project with three other sophomore-level students. Using a provided template, we learned how to add the nets and traces required to implement a diode matrix and connect to our SEEED XIAO-SENSE microcontroller.
 
-**SOLDERING PICTURE**
+<!-- **SOLDERING PICTURE** -->
 
 Once the PCBs were delivered, we spent a long time soldering the diodes and hotswap sockets in place. The microcontroller also provided a challenge. To make it replaceable, we soldered a makeshift socket to the board and wire to the actual pins. I was not very good at soldering this, so I also learned quite a few desoldering techniques.
 
-**FINISHED PRODUCT PICTURE**
+<!-- **FINISHED PRODUCT PICTURE** -->
 
 After that, the assembly was fairly straightforward. After attaching the battery, 3D-printing a case, and screwing the PCB in place, attaching the keys was all that was left. I was quite happy with the outcome given my inexperience. 
 
@@ -375,5 +375,7 @@ This custom key formation is programmed into a .keymap file. Modifications to th
     ```
 
 While this unique setup takes time to get used to, I have found that it can help me speed up my programming by keeping my hands on the keyboard.
+
+I am currently working on an alternate keymap inspired by the [Miryoku](https://github.com/manna-harbour/miryoku) layout. 
 
 

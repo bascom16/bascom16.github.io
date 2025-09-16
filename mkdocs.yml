@@ -5,25 +5,25 @@ theme:
   # font:
   #   text: Merriweather Sans
   #   code: Red Hat Mono
-  logo: assets/alpha-b-circle-outline.svg
-  favicon: assets/alpha-b-circle-outline.svg
+  logo: assets/blur.svg
+  favicon: assets/blur.svg
   # features:
   #   - navigation.footer
   palette:
-    # Dark Mode
-    - scheme: slate
-      toggle:
-        icon: material/weather-sunny
-        name: Dark mode
-      primary: blue
-      accent: deep purple
     # Light Mode
     - scheme: default
-      toggle:
-        icon: material/weather-night
-        name: Light mode
-      primary: blue
-      accent: deep orange
+      # toggle:
+      #   icon: material/weather-night
+      #   name: Switch to Dark Mode
+      primary: 'custom'
+      accent: 'custom'
+    # Dark Mode
+    # - scheme: slate
+    #   toggle:
+    #     icon: material/weather-sunny
+    #     name: Switch to Light Mode
+    #   primary: 'custom'
+    #   accent: 'custom'
 
 markdown_extensions:
   - tables
@@ -51,11 +51,12 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/brian-bascom-270653375
+      link: https://www.linkedin.com/in/brian-bascom
     - icon: simple/github
       link: https://github.com/bascom16
 
 extra_css:
+  - stylesheets/colors.css
   - stylesheets/extra.css
   - stylesheets/card_filters.css
 
@@ -63,7 +64,7 @@ copyright: Copyright &copy; 2025 Brian Bascom
 
 nav:
   - Bio: index.md
-  - Projects: portfolio/projects.md
+  - Projects: portfolio/projects_simplified.md
   - MAGICC Lab: magicc.md
   - Github: github.md
 
@@ -74,6 +75,6 @@ plugins:
         'github.md': 'https://github.com/bascom16'
   - tags
 
-extra_javascript:
-  - https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js
-  - javascript/isotope-init.js
+# extra_javascript:
+#   - https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js
+#   - javascript/isotope-init.js
