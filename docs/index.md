@@ -9,7 +9,7 @@ I'm Brian Bascom, an undergraduate student in Computer Engineering at Brigham Yo
 
 ![Brian Bascom](assets/brian_bascom_profile.jpeg){ width="200" }
 
-[:material-download: Resume](resources/brian_bascom_resume.pdf){ .md-button }
+[:material-download: Resume](resources/brian-bascom-resume-digital.pdf){ .md-button }
 
 ## Education
 
