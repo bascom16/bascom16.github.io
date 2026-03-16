@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [rewrite]  # change to [main] when you go live
+    branches: [claude]  # change to [main] when you go live
 
 permissions:
   contents: read
