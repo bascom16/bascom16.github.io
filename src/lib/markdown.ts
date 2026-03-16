@@ -10,8 +10,9 @@ export interface MarkdownContent {
   slug: string;
   frontmatter: {
     title: string;
-    date: string;
-    description: string;
+    date?: string;
+    description?: string;
+    tags?: string[];
     [key: string]: unknown;
   };
   content: string;
@@ -19,7 +20,7 @@ export interface MarkdownContent {
 }
 
 export async function getMarkdownContent(filename: string): Promise<MarkdownContent> {
-  const slug = filename.replace(/\.md$/, '');
+  const slug = filename.replace(/\.md$/, '').split('/').pop() || filename;
   const fullPath = path.join(contentDirectory, filename);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
@@ -49,4 +50,25 @@ export async function getAllContent(): Promise<MarkdownContent[]> {
   const files = getAllMarkdownFiles();
   const content = await Promise.all(files.map(getMarkdownContent));
   return content;
+}
+
+export function getMarkdownFilesInDirectory(directory: string): string[] {
+  const dirPath = path.join(contentDirectory, directory);
+  if (!fs.existsSync(dirPath)) {
+    return [];
+  }
+  return fs
+    .readdirSync(dirPath)
+    .filter((file) => file.endsWith('.md'))
+    .map((file) => `${directory}/${file}`);
+}
+
+export async function getContentByDirectory(directory: string): Promise<MarkdownContent[]> {
+  const files = getMarkdownFilesInDirectory(directory);
+  const content = await Promise.all(files.map(getMarkdownContent));
+  return content.sort((a, b) => {
+    const dateA = a.frontmatter.date || '';
+    const dateB = b.frontmatter.date || '';
+    return dateB.localeCompare(dateA);
+  });
 }
