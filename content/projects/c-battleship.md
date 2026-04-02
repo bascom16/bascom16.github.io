@@ -1,6 +1,6 @@
 ---
 title: "C Battleship"
-date: "2024-01-01"
+date: "2025-02-01"
 description: "2-player Battleship game on two game controllers connected via UART. Built for ECEN 330."
 tags: ["c", "embedded", "hardware"]
 github: ""

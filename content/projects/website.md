@@ -1,6 +1,6 @@
 ---
 title: "This Website"
-date: "2026-01-01"
+date: "2025-03-01"
 description: "Personal portfolio site built with Next.js, TypeScript, Tailwind CSS, and deployed to GitHub Pages."
 tags: ["nextjs", "typescript", "tailwind"]
 github: "https://github.com/bascom16/bascom16.github.io"

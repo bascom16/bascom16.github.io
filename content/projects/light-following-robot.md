@@ -1,6 +1,6 @@
 ---
 title: "Light-Following Robot"
-date: "2023-01-01"
+date: "2025-01-01"
 description: "Arduino-based robot that follows light sources. Built for BYU ECEN 240 (Circuits)."
 tags: ["arduino", "hardware", "embedded"]
 github: ""

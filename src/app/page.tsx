@@ -9,8 +9,8 @@ export default function Home() {
             Brian Bascom
           </h1>
           <p className="text-xl text-zinc-600 dark:text-zinc-300">
-            Welcome to my personal website. This is a placeholder introduction.
-            Update this text to describe yourself and your work.
+            I'm Brian Bascom, a third-year computer engineering student at BYU.
+            As a research assistant in the Multi-agent Coordination and Controls Lab (MAGICC Lab), I have hands-on experience in UAV hardware and software.
           </p>
         </section>
 

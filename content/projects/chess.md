@@ -1,6 +1,6 @@
 ---
 title: "Chess Project"
-date: "2025-01-01"
+date: "2025-05-01"
 description: "Full-stack networked chess application built for BYU CS 240 (Advanced Software Construction)."
 tags: ["java", "software"]
 github: "https://github.com/bascom16/chessProject"

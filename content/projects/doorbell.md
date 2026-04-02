@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi Doorbell"
-date: "2024-01-01"
+date: "2025-04-01"
 description: "Raspberry Pi doorbell system with camera, LCD display, and digital image processing. Built for ECEN 224."
 tags: ["python", "embedded", "raspberry-pi", "hardware"]
 github: "https://github.com/bascom16/doorbell_demo"

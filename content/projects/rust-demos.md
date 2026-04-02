@@ -1,6 +1,6 @@
 ---
 title: "Rust Demos"
-date: "2025-01-01"
+date: "2025-06-01"
 description: "Educational Rust demonstrations covering core language concepts, following the pattern of the Rust Book."
 tags: ["rust", "education"]
 github: "https://github.com/bascom16/Rust-Demos"

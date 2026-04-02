@@ -1,6 +1,6 @@
 ---
 title: "IEEE Club Keyboard"
-date: "2025-01-01"
+date: "2025-07-01"
 description: "Custom split keyboard built as the 2024-2025 IEEE BYU chapter project, with ZMK firmware and custom key layers."
 tags: ["hardware", "firmware", "pcb"]
 github: "https://github.com/bascom16/zmk_clacken"
