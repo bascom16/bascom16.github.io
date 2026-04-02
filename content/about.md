@@ -1,23 +1,11 @@
 ---
 title: "About Me"
-description: "Learn more about my background, interests, and work."
+description: "Undergraduate student in Computer Engineering at BYU. Research assistant at the BYU MAGICC Lab."
+role: "Computer Engineering Student @ BYU"
+location: "Provo, UT"
 github: "https://github.com/bascom16"
-linkedin: ""
+linkedin: "https://www.linkedin.com/in/brian-bascom"
 email: ""
 ---
 
-Welcome to my personal website. This is a placeholder for your biography.
-
-## Background
-
-Add information about your academic background, research interests, and professional experience here.
-
-## Research Interests
-
-- Interest area 1
-- Interest area 2
-- Interest area 3
-
-## Education
-
-Add your educational history here.
+I'm Brian Bascom, an undergraduate student in Computer Engineering at Brigham Young University. Current research assistant at the BYU MAGICC Lab.
