@@ -16,15 +16,17 @@ export async function generateStaticParams() {
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const { slug } = await params;
   const project = await getMarkdownContent(`projects/${slug}.md`);
-  const { github, demo } = project.frontmatter as {
+  const { github, demo, demoLabel, hideDate } = project.frontmatter as {
     github?: string;
     demo?: string;
+    demoLabel?: string;
+    hideDate?: boolean;
   };
 
   return (
     <ArticleLayout
       title={project.frontmatter.title}
-      date={project.frontmatter.date}
+      date={hideDate ? undefined : project.frontmatter.date}
       description={project.frontmatter.description}
       tags={project.frontmatter.tags}
       htmlContent={project.htmlContent}
@@ -48,7 +50,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               rel="noopener noreferrer"
               className="px-4 py-2 rounded-lg border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
             >
-              Live Demo
+              {demoLabel ?? "Live Demo"}
             </Link>
           )}
         </section>
